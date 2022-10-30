@@ -1,0 +1,154 @@
+
+body{
+    background-image: url(./images/erik-mclean-sxiSod0tyYQ-unsplash.jpg);
+    height:100vh;
+    width:50%;
+    background-size: cover;
+    background-position:center;
+}
+
+
+.main{
+    position:fixed;
+    top:0;
+    background-color:rgba(28, 12, 43, 0.993);
+    margin:0;
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;  
+    height: 12vh;
+    
+}
+.title{
+    position: absolute;
+    top:10%;
+    
+   }
+   .title h1{
+    color:rgba(243, 12, 12, 0.842);
+    font-size: 40px;
+       }
+ul {
+      float:right;
+    margin-top: 25px;
+    
+}
+
+ul li{
+    margin: 20px;
+display: inline-block;
+    list-style: none;
+    position: relative;
+}
+ul li a {
+    text-decoration: none;
+    color: crimson;
+    padding: 5px 20px;
+    border: 1px solid crimson;
+text-transform: uppercase;
+transition: 0.5s;
+
+}
+ul li a:hover{
+    background-color: rgb(141, 98, 98);
+}
+ul li.active a{
+    background-color: white;
+    color:crimson;
+}
+
+.logo{
+    width: 80px;
+    margin-bottom: 30px;
+ }
+ .logo img{
+    margin-top: 25px;
+    float:left;
+    height:12vh;
+    width:50px;
+ }
+
+ .container{
+    justify-content:center;
+    align-items:center;
+    display: flex;
+    width: 150%;
+    height: 100%;
+    margin : -20px auto;
+    float:left;
+    border-radius: 30px;
+    border:0;
+
+ }
+
+ .container h2{
+    
+    color:rgba(247, 252, 252, 0.897);
+    font-weight:650 ;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    border-bottom: 4px solid #a30a3d;
+    display:inline-block;
+    letter-spacing: 1px;
+ }
+ form{
+width:50%;
+}
+
+.inputbox{
+margin-bottom: 20px;
+
+ }
+
+.inputbox span{
+    font-size : 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color:#dfe3e9;
+    font-weight:300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.inputbox input{
+    width: 90%;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid #607d8b;
+    font-size : 16px;
+    border-radius: 30px;
+    display: inline-block;
+    color:#f6f9fff3;
+    font-weight:300;
+    letter-spacing: 1px;
+    background: transparent;
+}
+.inputbox input[type="submit"]{
+cursor: pointer;
+    outline: none;
+    border: none;
+    color:#607db4;
+    font-weight:300;
+    padding:10px;
+    background: rgb(228, 20, 20);
+    transition: transform .2s;
+}
+.inputbox input[type="submit"]:hover{
+    background:pink;
+    transform: scale(1.1);
+}
+.remember{
+    font-weight:300;
+    color:rgba(255, 13, 61, 0.993);
+    font-size: 18px;
+    margin-bottom:10px;
+
+}
+.inputbox p{
+    color: pink;
+    font-size: 18px;
+}
+.inputbox p a{
+    color:crimson;
+}
