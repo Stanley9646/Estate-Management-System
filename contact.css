@@ -1,0 +1,219 @@
+
+body{
+    background-color: #36461c;
+}
+.title{
+    position: absolute;
+    top:10%;
+    left:50%;
+   }
+
+.main{
+    background-color:rgb(161, 141, 85);
+    margin:auto;
+    top:0;
+    padding: 10px auto;
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    position:fixed;
+    height: 12vh;
+}
+ul {
+    
+    float:right;
+    margin-top: 25px;
+    
+}
+
+ul li{
+    margin: 20px;
+display: inline-block;
+    list-style: none;
+    position: relative;
+}
+ul li a {
+    text-decoration: none;
+    color: crimson;
+    padding: 5px 20px;
+    border: 1px solid crimson;
+text-transform: uppercase;
+transition: 0.5s;
+
+}
+
+ ul li a:hover{
+    background-color: rgb(141, 98, 98);
+}
+ul li.active a{
+    background-color: white;
+    color:crimson;
+}
+
+.logo img{
+    float:left;
+    height:auto;
+    width:74px;
+
+}
+.team {
+
+    height:60vw;
+    width:50%;
+
+}
+.us{
+    
+    float: right;
+margin:150px;
+padding: 35px;
+justify-content: center;
+    align-items: center;
+}
+
+form{
+    width:150%;
+    
+    }
+
+    form h2{
+        font-weight:900;
+        
+    }
+    
+    .inputbox{
+    margin-bottom: 20px;
+    
+     }
+    
+    .inputbox span{
+        font-size : 12px;
+        margin-bottom: 6px;
+        display: inline-block;
+        color:#ff0505;
+        font-weight:600;
+        letter-spacing: 1.1px;
+        text-transform: uppercase;
+    }
+    
+    .inputbox input{
+        width: 90%;
+        padding: 10px 20px;
+        outline: none;
+        border: 1px solid #fff7f7;
+        font-size : 16px;
+        border-radius: 30px;
+        display: inline-block;
+        color:#03060c;
+        font-weight:300;
+        letter-spacing: 1px;
+        background: transparent;
+    }
+    .inputbox input[type="submit"]{
+    cursor: pointer;
+        outline: none;
+        border: none;
+        color:#607db4;
+        font-weight:300;
+        padding:10px;
+        background: rgb(228, 20, 20);
+        transition: transform .2s;
+    }
+    .inputbox input[type="submit"]:hover{
+        background:pink;
+        transform: scale(1.1);
+    }
+
+    .p {
+        justify-content: center;
+        align-items:center;
+        margin: 100px;
+        margin-left: 100px;
+        padding:10px;
+        color: crimson;
+        font-size: 26px;
+    }
+
+    .caption{
+text-transform: uppercase;
+font-weight: 700;
+color: #000000;
+    }
+
+
+
+footer{
+    width:100%;
+    padding: 10px 0 35px; 
+    bottom:0;
+background:linear-gradient(to right, #3c3600,#2d0b00);
+color:#fff;
+border-bottom-left-radius: 135px;
+font-size: 13px;
+line-height: 20px;
+}
+
+ .row{
+    justify-content:space-between;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+ }
+ .col{
+    flex-basis: 20%;
+    padding:10px;
+ }
+ .logo{
+    width: 80px;
+    margin-bottom: 30px;
+ }
+ .col h2{
+    margin-bottom: 40px;
+    position: relative;
+    width: fit-content;
+
+ }
+
+ .email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+ }
+ .form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px
+ }
+ form input{
+    width:100%;
+    outline: none;
+    border: 0;
+    color: #ccc;
+    background: transparent;
+ }
+
+ hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto; 
+ }
+ .copyright{
+    text-align:center;
+    margin: 20px;
+
+ }
+ .underline{
+    width: 100px;
+    height: 5px;
+    background:#767676 ;
+    border-radius: 3px;
+    position: absolute;
+    /*top: 25px;
+    left:0;*/
+ }
