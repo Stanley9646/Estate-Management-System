@@ -1,0 +1,172 @@
+
+body{
+background-color: #fff9f9e3;
+}
+
+.main{
+    position:fixed;
+    top:0;
+    background-color:rgb(29, 53, 7);
+    margin:0;
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    
+    height: 12vh;
+}
+
+
+.title{
+    position: absolute;
+    top:10%;
+    
+   }
+   .title h1{
+    color:rgb(219, 35, 35);
+    font-size: 40px;
+       }
+ul {
+      float:right;
+    margin-top: 25px;
+    
+}
+
+ul li{
+    margin: 20px;
+display: inline-block;
+    list-style: none;
+    position: relative;
+}
+ul li a {
+    text-decoration: none;
+    color: crimson;
+    padding: 5px 20px;
+    border: 1px solid crimson;
+text-transform: uppercase;
+transition: 0.5s;
+
+}
+ul li a:hover{
+    background-color: rgb(141, 98, 98);
+}
+ul li.active a{
+    background-color: white;
+    color:crimson;
+}
+.founder{
+    float: right;
+    justify-content: space-between;
+
+} 
+
+.container img{
+    margin: right auto;
+    height: 70vh;
+    width: 45%;
+    padding: auto;
+}
+
+.container h1{
+    margin:auto;
+    padding:10px;
+}
+
+.start , .accomplishment , .founder{
+    text-align: center;
+    margin: 40px;
+    padding: 40px;
+    font-size: 25px;
+    justify-content: space-between;
+    width: 80%;
+    text-indent: 50px;
+    word-spacing: 10px;
+    
+
+}
+
+
+
+
+footer{
+    width:100%;
+    padding: 10px 0 35px; 
+    bottom:0;
+background:linear-gradient(to right, #00093c,#1d4406);
+color:#fff;
+border-bottom-left-radius: 135px;
+font-size: 13px;
+line-height: 20px;
+}
+
+ .row{
+    justify-content:space-between;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+ }
+ .col{
+    flex-basis: 20%;
+    padding:10px;
+ }
+ .logo{
+    width: 80px;
+    margin-bottom: 30px;
+ }
+ .logo img{
+    margin-top: 25px;
+    float:left;
+    height:12vh;
+    width:50px;
+
+}
+ .col h2{
+    margin-bottom: 40px;
+    position: relative;
+    width: fit-content;
+
+ }
+
+ .email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+ }
+ .form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px
+ }
+ form input{
+    width:100%;
+    outline: none;
+    border: 0;
+    color: #ccc;
+    background: transparent;
+ }
+
+ hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto; 
+ }
+
+ .copyright{
+    text-align:center;
+    margin: 20px;
+
+ }
+ .underline{
+    width: 100px;
+    height: 5px;
+    background:#767676 ;
+    border-radius: 3px;
+    position: absolute;
+    /*top: 25px;
+    left:0;*/
+ }
