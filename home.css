@@ -1,16 +1,29 @@
-*{
+::selection{
+    color: #faa4b5;
+}
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    text-decoration: none;
+    transition: all .2s linear;
 }
+
+
+ 
 header{
-    background-image: url(./images/stephen-leonardi-XKIO6ZgCObo-unsplash.jpg);
+    background-image:linear-gradient(rgba(42,53,74,0.85),rgba(42,53,74,0.85)), url(./images/stephen-leonardi-XKIO6ZgCObo-unsplash.jpg) ;
     height:100vh;
     background-size: cover;
     background-position: center;
+    
 }
 .main{
-    background-color:rgb(20, 5, 224);
+    background-color:#333;
     margin:auto;
     top:0;
     padding: 10px auto;
@@ -18,53 +31,45 @@ header{
     display:flex;
     justify-content:space-between;
     align-items: center;
-    position:fixed;
     height: 12vh;
-}
-ul {
-    
-    float:right;
-    margin-top: 25px;
-    
-}
+    position: fixed;
+    z-index: 1000;
 
-ul li{
+    
+}
+.nav li{
     margin: 20px;
-display: inline-block;
+    display: inline-block;
     list-style: none;
     position: relative;
 }
-ul li a {
+.nav a {
+    font-size: 1.2rem;
+    margin: 0.8rem;
     text-decoration: none;
-    color: crimson;
+    color: #fff;
     padding: 5px 20px;
-    border: 1px solid crimson;
-text-transform: uppercase;
-transition: 0.5s;
+    border:none;
+    text-transform: capitalize;
+    transition: 0.5s;
 
 }
-/*.navbar ul li ::after{
-    content:'';
-    height:3px;
-    width: 0;
-    position: absolute;
-    bottom:-10px;
-    left:0;
-    transition: 0.5s;
-}*/
- ul li a:hover{
-    background-color: rgb(141, 98, 98);
+ .nav a:hover{
+    color: #faa4b5;
+    font-size: large;
 }
 ul li.active a{
-    background-color: white;
-    color:crimson;
+    background-color:transparent;
+    color: #f1c5ce;
+    border-radius: 50%;
 }
 
 .logo img{
     float:left;
     height:auto;
-    width:74px;
-
+    width:60px;
+    border-radius: 25%;
+    padding-top: 0.8rem;
 }
 .title{
  position: absolute;
@@ -74,7 +79,7 @@ ul li.active a{
 .title h1{
  color:rgb(177, 104, 104);
  font-size: 50px;
-
+font-family: cursive;
 }
 .caption {
     position: absolute;
@@ -95,11 +100,11 @@ footer{
     width:100%;
     padding: 10px 0 35px; 
     bottom:0;
-background:linear-gradient(to right, #00093c,#2d0b00);
-color:#fff;
-border-bottom-left-radius: 135px;
-font-size: 13px;
-line-height: 20px;
+    background:linear-gradient(to right, #00093c,#2d0b00);
+    color:#fff;
+    border-bottom-left-radius: 135px;
+    font-size: 18px;
+    line-height: 20px;
 }
 
  .row{
@@ -116,6 +121,8 @@ line-height: 20px;
  .logo{
     width: 80px;
     margin-bottom: 30px;
+    height:auto;
+    border-radius: 25%;
  }
  .col h2{
     margin-bottom: 40px;
@@ -163,6 +170,327 @@ line-height: 20px;
     background:#767676 ;
     border-radius: 3px;
     position: absolute;
-    /*top: 25px;
-    left:0;*/
+  
  }
+/*
+section {
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.heading span {
+    font-size: 3.5rem;
+    background: rgba(255, 165, 0, .2);
+    color: var(--orange);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+}
+
+.heading span.space {
+    background: none;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--orange);
+    color: #fff;
+    font-size: 1.7rem;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--orange);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgba(255, 165, 0, .2);
+    color: var(--orange);
+}
+
+header {
+    
+}
+
+header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header .logo span {
+    color: var(--orange);
+}
+
+header .navbar a {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0.8rem;
+}
+
+header .navbar a:hover {
+    color: var(--orange);
+}
+
+header .icons i {
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+header .icons i:hover {
+    color: var(--orange);
+}
+
+header .search-bar-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 2rem;
+    background: #333;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0, 100% 0, 0 0);
+}
+
+header .search-bar-container.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+header .search-bar-container #search-bar {
+    width: 100%;
+    padding: 1rem;
+    text-transform: none;
+    color: #333;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+}
+
+header .search-bar-container label {
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+}
+
+header .search-bar-container label:hover {
+    color: var(--orange);
+}
+
+.login-form-container {
+    position: fixed;
+    top: -120%;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+
+.login-form-container.active {
+    top: 0;
+}
+
+.login-form-container form {
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    width: 50rem;
+}
+
+.login-form-container form h3 {
+    font-size: 3rem;
+    color: #444;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.login-form-container .box {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    margin: .6rem 0;
+    border: 0.1rem solid rgba(0, 0, 0, .3);
+    text-transform: none;
+}
+
+.login-form-container .box:focus {
+    border-color: var(--orange);
+}
+
+.login-form-container #remember {
+    margin: 2rem 0;
+}
+
+.login-form-container label {
+    font-size: 1.5rem;
+}
+
+.login-form-container form .btn {
+    display: block;
+    width: 100%;
+}
+
+.login-form-container form p {
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.login-form-container form p a {
+    color: var(--orange);
+}
+
+.login-form-container form p a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.login-form-container #form-close {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    font-size: 5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+#menu-bar {
+    color: #fff;
+    border: 0.1rem solid #fff;
+    font-size: 3rem;
+    border-radius: .5rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+
+.home .content {
+    text-align: center;
+}
+
+.home .content h3 {
+    font-size: 4.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: .3rem .5rem rgba(0, 0, 0, .1);
+}
+
+.home .content p {
+    font-size: 2.5rem;
+    color: #fff;
+    padding: .5rem 0;
+}
+
+.home .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .controls {
+    padding: 1rem;
+    border-radius: 5rem;
+    background: rgba(0, 0, 0, .7);
+    position: relative;
+    top: 10rem;
+}
+
+.home .controls .vid-btn {
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    margin: .5rem;
+}
+
+.home .controls .vid-btn.active {
+    background: var(--orange);
+
+
+
+
+
+
+
+
+
+    .footer {
+    background: #333;
+}
+
+.footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .box-container .box {
+    padding: 1rem 0;
+    flex: 1 1 25rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    padding: .7rem 0;
+    color: #fff;
+}
+
+.footer .box-container .box p {
+    font-size: 1.5rem;
+    padding: .7rem 0;
+    color: #eee;
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.5rem;
+    padding: .7rem 0;
+    color: #eee;
+}
+
+.footer .box-container .box a:hover {
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+.footer .credit {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #fff;
+    border-top: .1rem solid rgba(255, 255, 255, 0.2);
+}
+
+} */
