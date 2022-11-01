@@ -1,72 +1,99 @@
+::selection{
+    color: #faa4b5;
+}
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
 
 body{
 background-color: #fff9f9e3;
 }
 
 .main{
-    position:fixed;
+    background-color:#333;
+    margin:auto;
     top:0;
-    background-color:rgb(29, 53, 7);
-    margin:0;
+    padding: 10px auto;
     width: 100%;
     display:flex;
     justify-content:space-between;
     align-items: center;
-    
     height: 12vh;
+    position: fixed;
+    z-index: 1000;  
 }
-
-
-.title{
-    position: absolute;
-    top:10%;
-    
-   }
-   .title h1{
-    color:rgb(219, 35, 35);
-    font-size: 40px;
-       }
-ul {
-      float:right;
-    margin-top: 25px;
-    
-}
-
-ul li{
+.nav li{
     margin: 20px;
-display: inline-block;
+    display: inline-block;
     list-style: none;
     position: relative;
 }
-ul li a {
+.nav a {
+    font-size: 1.2rem;
+    margin: 0.8rem;
     text-decoration: none;
-    color: crimson;
+    color: #fff;
     padding: 5px 20px;
-    border: 1px solid crimson;
-text-transform: uppercase;
-transition: 0.5s;
+    border:none;
+    text-transform: capitalize;
+    transition: 0.5s;
 
 }
-ul li a:hover{
-    background-color: rgb(141, 98, 98);
+ .nav a:hover{
+    color: #faa4b5;
+    font-size: large;
 }
 ul li.active a{
-    background-color: white;
-    color:crimson;
+    background-color:transparent;
+    color: #f1c5ce;
+    border-radius: 50%;
 }
+
+.logo img{
+    float:left;
+    height:auto;
+    width:60px;
+    border-radius: 25%;
+    padding-top: 0.8rem;
+}
+
+.title{
+    position: absolute;
+    top:12%;
+   }
+   .title h1{
+    color:rgb(165, 52, 52);
+    font-size: 40px;
+ }
 .founder{
     float: right;
     justify-content: space-between;
-
-} 
+    } 
+ .container h2, h3, h4{
+    color: #4b4a4a;
+}
+ 
 
 .container img{
     margin: right auto;
     height: 70vh;
     width: 45%;
     padding: auto;
+    border-radius: 25%;
+    transition: 1.4s;
 }
-
+.container img:hover{
+    transform: rotate(360deg);
+    transition-delay: 0.2s;
+}
 .container h1{
     margin:auto;
     padding:10px;
@@ -75,7 +102,7 @@ ul li.active a{
 .start , .accomplishment , .founder{
     text-align: center;
     margin: 40px;
-    padding: 40px;
+    padding: 40px 20px;
     font-size: 25px;
     justify-content: space-between;
     width: 80%;
@@ -85,18 +112,15 @@ ul li.active a{
 
 }
 
-
-
-
 footer{
     width:100%;
     padding: 10px 0 35px; 
     bottom:0;
-background:linear-gradient(to right, #00093c,#1d4406);
-color:#fff;
-border-bottom-left-radius: 135px;
-font-size: 13px;
-line-height: 20px;
+    background:linear-gradient(to right, #00093c,#1d4406);
+    color:#fff;
+    border-bottom-left-radius: 135px;
+    font-size: 18px;
+    line-height: 20px;
 }
 
  .row{
@@ -113,6 +137,8 @@ line-height: 20px;
  .logo{
     width: 80px;
     margin-bottom: 30px;
+    height:auto;
+    border-radius: 25%;
  }
  .logo img{
     margin-top: 25px;
@@ -167,6 +193,4 @@ line-height: 20px;
     background:#767676 ;
     border-radius: 3px;
     position: absolute;
-    /*top: 25px;
-    left:0;*/
- }
+    }
